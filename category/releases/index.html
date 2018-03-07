@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="de-DE"
+ xmlns:og="http://opengraphprotocol.org/schema/"
+ xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<base href="" />
+
+<meta charset="UTF-8" />
+<title>Releases | Tanz+Klangkombinat</title>
+<meta http-equiv="language" content="de" />
+<link rel="shortcut icon" type="image/ico" href="/wp-content/themes/tkk/favicon.ico" />
+<meta name="author" content="Martin Melcher" />
+<meta name="robots" content="noodp" />
+<meta name="robots" content="index,follow" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/tkk/style.css" />
+
+<script src="http://cdn.jquerytools.org/1.2.3/full/jquery.tools.min.js"></script>
+<script src="/wp-content/themes/tkk/js/jquery.cycle.all.min.js"></script>
+<script src="/wp-content/themes/tkk/js/jquery.lazyload.mini.js"></script>
+<script src="/wp-content/themes/tkk/js/custom.js"></script>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+<link rel="pingback" href="/xmlrpc.php" />
+<link rel='stylesheet' id='contact-form-7-css'  href='/wp-content/plugins/contact-form-7/styles.css?ver=2.4.5' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript' src='/wp-content/plugins/gigpress/scripts/gigpress.js?ver=3.5.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.1.3'></script>
+<script type='text/javascript' src='/wp-includes/js/tw-sack.min.js?ver=1.6.1'></script>
+<script type="text/javascript">
+//<![CDATA[
+function alo_em_pubblic_form ()
+{
+//edit : added all this for
+  var alo_cf_array = new Array();
+      document.alo_easymail_widget_form.submit.value="Senden...";
+  document.alo_easymail_widget_form.submit.disabled = true;
+  document.getElementById('alo_em_widget_loading').style.display = "inline";
+  document.getElementById('alo_easymail_widget_feedback').innerHTML = "";
+  
+   var alo_em_sack = new sack("/wp-admin/admin-ajax.php" );    
+
+  alo_em_sack.execute = 1;
+  alo_em_sack.method = 'POST';
+  alo_em_sack.setVar( "action", "alo_em_pubblic_form_check" );
+  alo_em_sack.setVar( "alo_em_opt_name", document.alo_easymail_widget_form.alo_em_opt_name.value );
+  alo_em_sack.setVar( "alo_em_opt_email", document.alo_easymail_widget_form.alo_em_opt_email.value );
+    alo_em_sack.setVar( "alo_easymail_txt_generic_error", 'Fehler während der Operation.' );  
+  alo_em_sack.setVar( "alo_em_error_email_incorrect", "Die E-Mailadresse ist nicht korrekt");
+  alo_em_sack.setVar( "alo_em_error_name_empty", "Das Namensfeld ist leer");
+    alo_em_sack.setVar( "alo_em_error_email_added", "Warnung: Die E-Mailadresse ist schon angemeldet, aber nicht aktiviert. Es wurde eine weitere Aktivierungsmail verschickt");
+  alo_em_sack.setVar( "alo_em_error_email_activated", "Warnung: Die E-Mailadresse ist schon angemeldet");
+  alo_em_sack.setVar( "alo_em_error_on_sending", "Fehler beim Senden: Versuche es erneut");
+  alo_em_sack.setVar( "alo_em_txt_ok", "Anmeldung erfolgreich. Du bekommst eine E-Mail mit einem Link. Du musst damit dein Abonnement aktivieren.");
+  alo_em_sack.setVar( "alo_em_txt_subscribe", "Abonnieren");
+  alo_em_sack.setVar( "alo_em_lang_code", "");  
+  
+  var cbs = document.getElementById('alo_easymail_widget_form').getElementsByTagName('input');
+  var length = cbs.length;
+  var lists = "";
+  for (var i=0; i < length; i++) {
+  	if (cbs[i].name == 'alo_em_form_lists' +'[]' && cbs[i].type == 'checkbox') {
+  		if ( cbs[i].checked ) lists += cbs[i].value + ",";
+  	}
+  }
+  alo_em_sack.setVar( "alo_em_form_lists", lists );
+  alo_em_sack.setVar( "alo_em_nonce", 'e4f45b5d42' );  
+  //alo_em_sack.onError = function() { alert('Ajax error' )};
+  alo_em_sack.runAJAX();
+
+  return true;
+
+} 
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+
+
+<!-- Facebook Like Thumbnail -->
+<meta property="og:image" content="/wp-content/uploads/2017/11/artworks-000232928334-dny2cm-t500x500-300x300.jpg" />
+<!-- End Facebook Like Thumbnail -->
+
+<link type="text/css" rel="stylesheet" href="/wp-content/plugins/gigpress/css/gigpress.css" media="all" />
+<link href="/?feed=gigpress" rel="alternate" type="application/rss+xml" title="Kommende Shows" />
+<meta property="fb:admins" content="133532153331171" />
+<meta property="og:site_name" content="Tanz+Klangkombinat" />
+<meta property="og:type" content="article" />
+<script type='text/javascript'>/* <![CDATA[ */ var _wpaudio = {url: '/wp-content/plugins/wpaudio-mp3-player', enc: {}, convert_mp3_links: false, style: {text_font:'Arial, Sans-serif',text_size:'18px',text_weight:'bold',text_letter_spacing:'-1px',text_color:'inherit',link_color:'#24f',link_hover_color:'#02f',bar_base_bg:'#eee',bar_load_bg:'#ccc',bar_position_bg:'#46f',sub_color:'#aaa'}}; /* ]]> */</script><!-- Google Analytics Tracking by Google Analyticator 6.1.3: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-17768453-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+  <div id="logo" class="lfloat">
+    <h1>Tanz+Klangkombinat</h1>
+    <a href="" title="tanz+klangkombinat"> <img src="/wp-content/themes/tkk/img/tkk-logo.png" alt="tanz+klangkombinat" width="520" height="100" /> </a>
+  </div>
+  <div id="quick-search">
+  							<form action="/" method="get" id="search-form">
+
+							<div class="fr">
+
+								<input type="text" value="" class="textfield search-textfield" name="s" id="s" /><input type="submit" value="Suchen" class="button search-button" />
+
+							</div>
+
+						</form>
+
+  </div>
+</div>
+</div>
+<div id="main-nav">
+  <ul>
+    <div class="menu-hauptmenu-container"><ul id="menu-hauptmenu" class="menu"><li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="http://tanzundklangkombinat.de/">News</a></li>
+<li id="menu-item-4587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4587"><a href="/music/">Music</a></li>
+<li id="menu-item-4746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4746"><a href="/podcast/">Podcast</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="/artists/">Artists</a></li>
+<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="/dates/">Dates</a></li>
+<li id="menu-item-338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-338"><a href="/das-kombinat/">About</a></li>
+<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="/contact/">Contact</a></li>
+<li id="menu-item-4588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4588"><a href="/newsletter-2/">Nwsltr</a></li>
+</ul></div> 
+   
+  </ul>
+</div>
+<div class="wrapper">
+<!--END FEATURE-->
+</div>
+
+
+
+<div id="teaser">
+
+  <div id="main_slides">
+<li><a href="/?p=7454"><img src="/wp-content/themes/tkk/img/teaser/oyp-podcast-martin-anacker.jpg" /></a></li>
+<li><a href="/?p=6690"><img src="/wp-content/themes/tkk/img/teaser/teaser-podcast-10-stue.jpg" /></a></li>
+<li><a href="/?p=6423"><img src="/wp-content/themes/tkk/img/teaser/teaser-podcast-09-deepol.jpg" /></a></li>
+<li><a href="/?p=6038"><img src="/wp-content/themes/tkk/img/teaser/teaser-moody-monk-no7.jpg" /></a></li>
+
+
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="wrapper">
+
+  <div id="container">
+
+    <div id="content">
+
+      
+      <div class="" id="p-10920">
+
+        <div class="entry">
+
+          <h2><a href="/2017/11/platte-der-woche-359/" title="Platte der Woche #359">
+
+            Platte der Woche #359
+            </a></h2>
+
+          <div class="comment-count">
+
+            <a href="/2017/11/platte-der-woche-359/#respond" title="Kommentiere Platte der Woche #359">0</a>
+          </div>
+
+          <br class="clear" />
+
+          <div class="meta">
+
+            12/11/2017
+            &middot; <span class="author">
+
+            Vivian Koch
+            &middot; <span class="meta2">Kategorie:
+
+            <a href="/category/platte-der-woche/" title="Alle Beiträge in Platte der Woche ansehen" rel="category tag">Platte der Woche</a>,<a href="/category/releases/" title="Alle Beiträge in Releases ansehen" rel="category tag">Releases</a>
+            </span>
+
+            
+            &middot; </span> </div>
+
+          <p style="text-align: center"><a href="/wp-content/uploads/2017/11/artworks-000232928334-dny2cm-t500x500.jpg"><img class=" wp-image-10922 aligncenter" alt="artworks-000232928334-dny2cm-t500x500" src="/wp-content/uploads/2017/11/artworks-000232928334-dny2cm-t500x500-300x300.jpg" width="600" height="600" /></a></p>
+<p>Diesen Sonntag und zum Abschluss der Tanz- und Klangkombinat Ära möchte ich nutzen, um zwei Talente aus Berlin vorzustellen, die mich in den letzten Monaten abseits des Techno&#8217;s mit ihren Produktionen sehr beeinflusst und inspiriert haben. Mein Weitblick und Verständnis bezüglich der Genres des Synthie- und Disco House wurde durch dieses junge Band Projekt total geprägt.<br />
+Die Produktionen bestehen aus der Zusammenarbeit des britischen Sängers James Brook und dem Produzenten Thomas Freudenthal, welcher u.a. auch unter diesem Namen seit einiger Zeit ein erfolgreiches Solo Projekt führt.</p>
+<p>Zaghaft bin ich durch Carolain Luf an housige &#8211; langsamere, elektronische Stile rangetreten, bis sie mich auf die &#8220;Inside The Outside &#8211; EP&#8221; aufmerksam machte. Noch kurz danach erschien &#8220;Power To The People&#8221; von Pardon Moi auf &#8220;Höga Nord Rekords&#8221; und es war um mich geschehen. Das schwedische Label steht für mich seit 4 Jahren für ausgesprochen abwechslungsreiche  und enorm genreübergreifende Releases, angefangen von bekannten Künstlern wie &#8220;The Exorcist&#8221;, über Urgesteine wie Robert Leiner bis hin zu Andrew Weatherall. Durch ihren herausstechenden Wiedererkennungswert konnten sich Pardon Moi bereits zahlreiche Remixe von international angesagten Künstlern für ihre EP&#8217;s ergattern, wie auch bei dieser.</p>
+<p>Das Spannende hierbei ist, dass durch den instrumentalen Einfluss sehr kraftvoller, man möge fast sagen futuristischer Indie Disco das Klangergebnis bildet. Ich habe selten in den letzten Monaten so detailreiche Produktionen gehört und bin mega gespannt, was wir im nächsten Jahr von den beiden hören und sehen werden.</p>
+<p>Ich wünsche dem Team von Tanz- und Klangkombinat alles alles Liebe und bedanke mich für die Zeit,</p>
+<p>Vivian</p>
+<p><iframe width="500" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F360619775&#038;show_artwork=true&#038;maxwidth=500&#038;maxheight=750"></iframe></p>
+<p><strong>Pardon Moi ‎– Power To The People</strong><br />
+Label: Höga Nord Rekords<br />
+Format: Vinyl, 17″<br />
+Land: Sweden<br />
+Veröffentlicht: 28 Juli 2017<br />
+Genre: Electronic<br />
+Stil: New Wave, Electro, Indie Disco</p>
+<div></div>
+<p>&nbsp;</p>
+
+          <br class="clear" />
+
+        </div>
+
+      </div>
+
+      
+      <div class="" id="p-10498">
+
+        <div class="entry">
+
+          <h2><a href="/2017/05/platte-der-woche-338/" title="Platte der Woche #338">
+
+            Platte der Woche #338
+            </a></h2>
+
+          <div class="comment-count">
+
+            <a href="/2017/05/platte-der-woche-338/#respond" title="Kommentiere Platte der Woche #338">0</a>
+          </div>
+
+          <br class="clear" />
+
+          <div class="meta">
+
+            09/05/2017
+            &middot; <span class="author">
+
+            Zacharias
+            &middot; <span class="meta2">Kategorie:
+
+            <a href="/category/allgemein/" title="Alle Beiträge in Allgemein ansehen" rel="category tag">Allgemein</a>,<a href="/category/musik/" title="Alle Beiträge in Musik ansehen" rel="category tag">Musik</a>,<a href="/category/platte-der-woche/" title="Alle Beiträge in Platte der Woche ansehen" rel="category tag">Platte der Woche</a>,<a href="/category/releases/" title="Alle Beiträge in Releases ansehen" rel="category tag">Releases</a>
+            </span>
+
+            
+            &middot; </span> </div>
+
+          <p><strong>Pacific Coliseum &#8211; Ocean City LP (Coastal Haze)</strong></p>
+<p><a href="/wp-content/uploads/2017/05/PAC-COL-OCEAN-CITY.jpg"><img class="aligncenter size-large wp-image-10501" alt="PAC-COL-OCEAN-CITY" src="/wp-content/uploads/2017/05/PAC-COL-OCEAN-CITY-600x573.jpg" width="600" height="573" /></a></p>
+<p>Heute begeben wir uns auf einen kurzen musikalischen Ausflug ans Meer. Das Londoner Label <a href="https://www.discogs.com/label/1070763-Coastal-Haze">Coastal Haze</a> hat im April ein ganz herrlich verspieltes Album des Kanadiers Jamison Isaak veröffentlicht. Als Musiker firmiert er unter dem Synonym <a href="https://www.discogs.com/artist/5646528-Pacific-Coliseum">Pacific Coliseum</a> und hat mit <a href="https://www.discogs.com/Pacific-Coliseum-Ocean-City-LP/release/10028738">Ocean City</a> eine warme, sommerlich durchflutete Platte geschrieben, die von der Soundästhetik her zwischen 70er-Jahre Porn-Music, 80er-Jahre Miami-Vice-Charme und 90er-Jahre Digital-Syntheziser-Sound pendelt. Das Ganze gibt es wie immer bei Coastal Haze nur auf Tape <a href="https://coastalhaze.bandcamp.com/album/ocean-city-lp"> (hier)</a>. Digital natürlich auch, aber das hat ja nur halb so viel Stil. Also mal bitte die Gliedmaßen ausfahren und eine kleine Kopfreise gen Strand unternehmen.</p>
+<p>Cheers, Zacharias</p>
+<p><iframe src="https://www.youtube.com/embed/m9i6BUUj1hM" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<p><iframe src="https://www.youtube.com/embed/6CoUewnplgU" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
+<p><strong><br />
+Pacific Coliseum ‎– Ocean City LP</strong><br />
+<strong>Label:</strong> Coastal Haze ‎– COASTAL005<br />
+<strong>Format:</strong> Cassette, Album, LP<br />
+<strong>Land: </strong>UK<br />
+<strong>Veröffentlicht:</strong> 03 Apr 2017<br />
+<strong>Genre: </strong>Electronic<br />
+<strong>Stil:</strong> House, Downtempo, Ambient</p>
+
+          <br class="clear" />
+
+        </div>
+
+      </div>
+
+      
+      <div class="" id="p-10241">
+
+        <div class="entry">
+
+          <h2><a href="/2017/02/platte-der-woche-327/" title="Platte der Woche #327">
+
+            Platte der Woche #327
+            </a></h2>
+
+          <div class="comment-count">
+
+            <a href="/2017/02/platte-der-woche-327/#respond" title="Kommentiere Platte der Woche #327">0</a>
+          </div>
+
+          <br class="clear" />
+
+          <div class="meta">
+
+            19/02/2017
+            &middot; <span class="author">
+
+            Zacharias
+            &middot; <span class="meta2">Kategorie:
+
+            <a href="/category/allgemein/" title="Alle Beiträge in Allgemein ansehen" rel="category tag">Allgemein</a>,<a href="/category/platte-der-woche/" title="Alle Beiträge in Platte der Woche ansehen" rel="category tag">Platte der Woche</a>,<a href="/category/releases/" title="Alle Beiträge in Releases ansehen" rel="category tag">Releases</a>,<a href="/category/review/" title="Alle Beiträge in Review ansehen" rel="category tag">Review</a>,<a href="/category/thuringen/" title="Alle Beiträge in Thüringen ansehen" rel="category tag">Thüringen</a>
+            </span>
+
+            
+            &middot; </span> </div>
+
+          <p><strong>No Accident in Paradise &#8211; KOLEKCJA</strong></p>
+<p><a href="/wp-content/uploads/2017/01/NAIP_Cassette_Full.jpg"><img class="aligncenter size-large wp-image-10243" alt="Blank cassette tape box design mockup, isolated, clipping path." src="/wp-content/uploads/2017/01/NAIP_Cassette_Full-600x461.jpg" width="600" height="461" /></a></p>
+<p>Alles schwebt! Auf Tape.</p>
+<p>Das Kollektiv „<a href="http://www.noaccidentinparadise.com/">No Accident in Paradise</a>“ hat Anfang des Jahres mit »KOLEKCJA« eine wunderbare Compilation von verstreuten Ambient-Stücken zusammengeschnürt und in eure Ohren gestreut.</p>
+<p>Es ist ein ganz eigener Kosmos, welchen die Drei da aus ihren Geräten zaubern. An jeder Ecke der Musikstücke blitzen kleine Wunder hervor, es fallen Klangflocken aus allen Himmelsrichtungen und man merkt wie viel Mühe sich hier gegeben wurde, nicht nur eine klangliche, sondern auch eine hohe emotionale und inhaltliche Dichte zu schaffen. An manchen Stellen ist das Alles beim ersten Hören gar nicht voll zu erfassen.</p>
+<p>Eine durch und durch interessante Sache und auch ein sehr gutes Beispiel dafür, dass Musik nicht nach Schema „F“ und dem Ableton Baukastenprinzip entstehen sollte, wenn sie wirklich Tiefe erreichen will. Das Stück »ICE« ähnelt gar einer musikalischen Installation, einem fast schon erfühlbaren Gebilde aus Klängen.</p>
+<p>Eine absolut empfehlenswerte Zusammenstellung die auf stark limitierten 33 Tapes und digital bei <a href="https://noaccidentinparadise.bandcamp.com/album/kolekcja">Bandcamp</a> zu bekommen ist.</p>
+<p>Stark beeindruckt,<br />
+<a href="https://de-de.facebook.com/zacharias.music/">Zacharias</a></p>
+<p>&nbsp;<br />
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/300701919&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></p>
+<p>&nbsp;<br />
+<strong>No Accident In Paradise ‎– KOLEKCJA<br />
+Label:</strong> Not On Label ‎– NAIPmc1<br />
+<strong>Format:</strong> Cassette, EP, Limited Edition, Numbered, Stereo<br />
+<strong>Land:</strong> Germany<br />
+<strong>Veröffentlicht:</strong> 01 Jan 2017<br />
+<strong>Genre: </strong>Electronic<br />
+<strong>Stil:</strong> Ambient</p>
+<p>&nbsp;</p>
+
+          <br class="clear" />
+
+        </div>
+
+      </div>
+
+      
+      <div class="" id="p-10093">
+
+        <div class="entry">
+
+          <h2><a href="/2016/12/platte-der-woche-316/" title="Platte der Woche #316">
+
+            Platte der Woche #316
+            </a></h2>
+
+          <div class="comment-count">
+
+            <a href="/2016/12/platte-der-woche-316/#respond" title="Kommentiere Platte der Woche #316">0</a>
+          </div>
+
+          <br class="clear" />
+
+          <div class="meta">
+
+            04/12/2016
+            &middot; <span class="author">
+
+            Zacharias
+            &middot; <span class="meta2">Kategorie:
+
+            <a href="/category/allgemein/" title="Alle Beiträge in Allgemein ansehen" rel="category tag">Allgemein</a>,<a href="/category/platte-der-woche/" title="Alle Beiträge in Platte der Woche ansehen" rel="category tag">Platte der Woche</a>,<a href="/category/releases/" title="Alle Beiträge in Releases ansehen" rel="category tag">Releases</a>
+            </span>
+
+            
+            &middot; </span> </div>
+
+          <p><a href="/wp-content/uploads/2016/12/R-9175827-1476199070-9398.jpeg.jpg"><img src="/wp-content/uploads/2016/12/R-9175827-1476199070-9398.jpeg.jpg" alt="R-9175827-1476199070-9398.jpeg" width="600" height="600" class="aligncenter size-full wp-image-10098" /></a></p>
+<p>Nomumbah ‎– Amanhã </p>
+<p>Einen wundervollen Sonntag wünsche ich!</p>
+<p>Heute geht unsere Platte-der-Woche-Reise ins ferne Brasilien und wir knöpfen uns mal kurz das musikalische Projekt von Ale Reis, André Torquato und Rafael Moraes vor. Die drei jungen Menschen firmieren unter dem Synonym <a href="https://www.facebook.com/Nomumbah-187241311349794/?fref=ts">»Nomumbah«</a> und veröffentlichen auf dem griechischem Label <a href="https://www.discogs.com/de/label/2744-Yoruba-Records">»Yoruba«</a> von Osunlade. Ihr frisches Album »Amanha« wurde im Oktober dieses Jahres in die Regale gestellt und ist eine wirklich schöne Ansammlung deeper Sounds und schicker Tracks.</p>
+<p>Mein persönlicher Favorit ist »Bulan«, ein wundervoll verspulter Klangkörper, mit leichtem Hang zum Funk und ach überhaupt.. ein kleine Perle auf einem Album voller Perlen. Auf jeden Fall kann man dieses Album mal länger im Case behalten, denn es deckt wirklich einen farbenfrohen Fächer an Situationen und Stimmungen ab. Lehnt euch in eure übergroßen Ohrensessel und lasst die Ohrhäärchen flattern. </p>
+<p>Liebe Grüße aus Leipzig, <a href="https://www.facebook.com/zacharias.music/">Zacharias</a></p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/RtDFqtUV2Fw" frameborder="0" allowfullscreen></iframe></p>
+<p><strong>Nomumbah ‎– Amanhã</strong><br />
+<strong>Label:</strong> Yoruba Records ‎– YSD72<br />
+<strong>Format:</strong> 2 × Vinyl, 12&#8243;, 33 ⅓ RPM, Album<br />
+<strong>Land:</strong> UK<br />
+<strong>Veröffentlicht:</strong> 10 Oct 2016<br />
+<strong>Genre:</strong> Electronic<br />
+<strong>Stil:</strong> House, Deep House </p>
+
+          <br class="clear" />
+
+        </div>
+
+      </div>
+
+      
+      <div class="" id="p-9975">
+
+        <div class="entry">
+
+          <h2><a href="/2016/10/platte-der-woche-311/" title="Platte der Woche #311">
+
+            Platte der Woche #311
+            </a></h2>
+
+          <div class="comment-count">
+
+            <a href="/2016/10/platte-der-woche-311/#comments" title="Kommentiere Platte der Woche #311">1</a>
+          </div>
+
+          <br class="clear" />
+
+          <div class="meta">
+
+            30/10/2016
+            &middot; <span class="author">
+
+            Baba Sikander
+            &middot; <span class="meta2">Kategorie:
+
+            <a href="/category/allgemein/" title="Alle Beiträge in Allgemein ansehen" rel="category tag">Allgemein</a>,<a href="/category/musik/" title="Alle Beiträge in Musik ansehen" rel="category tag">Musik</a>,<a href="/category/platte-der-woche/" title="Alle Beiträge in Platte der Woche ansehen" rel="category tag">Platte der Woche</a>,<a href="/category/releases/" title="Alle Beiträge in Releases ansehen" rel="category tag">Releases</a>
+            </span>
+
+            
+            &middot; </span> </div>
+
+          <p><strong>LamatUuc &#8211; Curación</strong><br />
+<br />
+<a href="/wp-content/uploads/2016/10/a1663184919_10.jpg"><img src="/wp-content/uploads/2016/10/a1663184919_10-600x601.jpg" alt="a1663184919_10" width="600" height="601" class="alignnone size-large wp-image-9979" /></a></p>
+<p>Die Panflöte ist eines dieser ganz wenigen Instrumente, welchen ich mit einer gewissen Voreingenommenheit, zuweilen auch Abscheu begegne. Höre ich eine Panflöte, ziehe ich aus einer alten klemmenden Schublade stets eine traumatische Erinnerung hervor, die eine vor Kitsch triefende, unerträglich laute und nachts in Dauerschleife laufende TV-Werbung für ein 5er-Pack Entspannungs- und Meditations-CDs enthält. Im Ernst: Panflöte. Wer hört denn sowas? Ich kenne zum Glück niemanden. Das hält doch kein Mensch aus… dachte ich.</p>
+<p>Seit einigen Tagen kenne ich persönlich jemanden, der sich zumindest im passenden Kontext an einer Panflöte erfreuen kann und bin sehr überrascht, dass es sich dabei um mich selbst handelt. Meine Schublade voll traumatisierender Flötentöne wurde von einem Herren mit dem Pseudonym <a href="https://www.facebook.com/Lamatuuc/" title="LamatUuc">LamatUuc</a> ganz freundlich und unverhofft in den wachsenden Mülleimer der überflüssigen Vorurteile entleert. Es ist nicht das erste Mal, dass ich von LamatUuc höre und wer an meinen <a href="https://soundcloud.com/babasikander/sets/dj-sets">DJ-Sets</a> gefallen findet, wird vielleicht auch schon von ihm gehört haben. Er kombiniert dubbigen Techno mit erdiger, zuweilen auch himmlischer Folklore und schafft dabei eine umschmeichelnde Lagerfeueratmosphäre mit gelegentlichen Zuckungen der Raumzeit. In seinen bisherigen Releases mäandert er gern zwischen Abstraktem und Konkretem hin und her, zeigt sich sowohl Süßem als auch Herzhaftem gegenüber sehr offen und würzt an der richtigen Stelle dezent mit einer Prise Psychedelischem. </p>
+<p>Die EP um die es heute geht, ist vor einigen Wochen auf <a href="https://www.facebook.com/pages/Lump-Rec/1532172743698735">Lump Records</a> erschienen und trägt den Titel &#8220;Curación&#8221;. Sie umfasst zwei freundlicherweise <a href="https://lump-rec.bandcamp.com/album/lamatuuc-curaci-n-ep">gegen Spende erhältliche Stücke</a>, die scheinen als würden sie Etappen einer sehr inspirierenden Weltreise dokumentieren. Der Titelträck erzählt von der Panflöte und ihrer zupfenden Freundin, die mich und mein zwitscherndes Krafttier, durch regennasses Blätterwerk stolpernd, auf eine Lichtung locken. Dort warten bereits zwei neckische Schamanen. Der Eine pfeift, der Andere singt. Oder ist der Eine ebenso der Andere? Es ist eine Zeremonie für uns vorbereitet und wir brechen zu einer geisterhaft albernen Klangreise auf.</p>
+<p>Wo auch immer die andere Weltreisen-Etappe lag, sie wurde offenbar auf dem Rücken eines unter Blitzblähungen leidenden Dromedars bewältigt. Rein rhythmisch ist gegen die Wahl dieses stark groovenden Transportmittels nichts einzuwenden. Doch sollte niemand das, angesichts solch widriger Reiseumstände zuweilen auftretende, Gejammer unterschätzen. Ich schließe mich der &#8220;Caravana&#8221; musizierender Mystiker an und lasse mich von ihren alten Liedern verzaubern. Sie entführen mich in hypnotische Traumwelten, heben mich in luftigste Höhen und lassen mich in die melancholischsten Tiefen fallen. Und so zerrt und presst der Sufi-Lachgas-Sound mein stolperndes Dromedar durch einen Riss in der Dünen-Matrix. Was dahinter wohl zu finden ist?</p>
+<p>Gute Heilung!<br />
+Euer <a href="https://www.facebook.com/babasikander.music" title="baba on FB">Baba</a></p>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player?url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F259608892&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"></iframe>
+<p><strong>LamatUuc &#8211; Curación</strong><br />
+Label: Lump Records <br />
+Format: Digital<br />
+Country: Chile<br />
+Release Date: 16.09.2016<br />
+Genre: Lagerfeuertechno</p>
+
+          <br class="clear" />
+
+        </div>
+
+      </div>
+
+      
+      <div class="" id="p-9647">
+
+        <div class="entry">
+
+          <h2><a href="/2016/06/platte-der-woche-294-2/" title="Platte der Woche #294">
+
+            Platte der Woche #294
+            </a></h2>
+
+          <div class="comment-count">
+
+            <a href="/2016/06/platte-der-woche-294-2/#respond" title="Kommentiere Platte der Woche #294">0</a>
+          </div>
+
+          <br class="clear" />
+
+          <div class="meta">
+
+            12/06/2016
+            &middot; <span class="author">
+
+            Marian
+            &middot; <span class="meta2">Kategorie:
+
+            <a href="/category/allgemein/" title="Alle Beiträge in Allgemein ansehen" rel="category tag">Allgemein</a>,<a href="/category/musik/" title="Alle Beiträge in Musik ansehen" rel="category tag">Musik</a>,<a href="/category/platte-der-woche/" title="Alle Beiträge in Platte der Woche ansehen" rel="category tag">Platte der Woche</a>,<a href="/category/releases/" title="Alle Beiträge in Releases ansehen" rel="category tag">Releases</a>
+            </span>
+
+            
+            &middot; </span> </div>
+
+          <p><a href="/wp-content/uploads/2016/06/a1367820422_5.jpg"><img src="/wp-content/uploads/2016/06/a1367820422_5-600x600.jpg" alt="Interstellar Funk" width="600" height="600" class="alignnone size-large wp-image-9654" /></a></p>
+<p>Rush Hour ist bekannt für hochwertige Musik. Mit der Katalognummer RH014 reiht sich eine wunderschönes und gefühlvolles Debüt von Olf van Elden alias <a href="https://www.facebook.com/InterstellarFunk/">Interstellar Funk</a> mit ein. Die Platte enthält sechs Tracks, die alle samt eine Symbiose auf 12&#8243; darstellen. Niederländische Produzenten haben schon immer ein hohes Maß an Musikverständnis, wie ich finde. Interstellar Funk gilt als Nachwuchs dieser. Magische Melodien und strukturiere Tracks, die in die Zukunft blicken. Acid gepaart mit House-Grooves sorgt für ein abwechslungsreiches, bescheidenes und beeindruckendes Hörerlebnis. </p>
+<p>Eine abenteuerliche und mehrdimensionale Reise ist garantiert.</p>
+<p>Viel Spaß beim hören.<br />
+<a href="/?page_id=6405">Marian</a></p>
+<p><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262251482&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe></p>
+<h2><em>Interstellar Funk &#8211; Electric Park Square</em></h2>
+<address>Label: Rush Hour</address>
+<address>Format: 12inch</address>
+<address>Country: Netherlands</address>
+<address>Released: April 2016</address>
+<address>Genre: Electronic</address>
+<address>Style: House</address>
+<p>&nbsp;</p>
+
+          <br class="clear" />
+
+        </div>
+
+      </div>
+
+      
+      <!-- pb259 --><div class="pagebar">Seite:&nbsp;<span class="this-page">1</span>
+<a href="/category/releases/page/2/" title="Seite 2">2</a>
+<a href="/category/releases/page/3/" title="Seite 3">3</a>
+<a href="/category/releases/page/4/" title="Seite 4">4</a>
+<a href="/category/releases/page/5/" title="Seite 5">5</a>
+<a href="/category/releases/page/6/" title="Seite 6">6</a>
+<a href="/category/releases/page/7/" title="Seite 7">7</a>
+<a href="/category/releases/page/8/" title="Seite 8">8</a>
+<a href="/category/releases/page/9/" title="Seite 9">9</a>
+<a href="/category/releases/page/10/" title="Seite 10">10</a>
+<span class="break">...</span><a href="/category/releases/page/12/" title="Seite 12">12</a>
+<a href="/category/releases/page/13/" title="Seite 13">13</a>
+<a href="/category/releases/page/14/" title="Seite 14">14</a>
+<a href="/category/releases/page/2/" title="Seite 2">Weiter</a>
+</div>
+    </div>
+
+    <div id="sidebars">
+
+      <div id="text-18" class="widget widget_text">			<div class="textwidget"><a href="http://www.facebook.com/pages/TanzKlangkombinat/133532153331171" style="margin-right:5px"><img class="alignnone size-full wp-image-370" title="Facebook" src="http://tanzundklangkombinat.de/wp-content/themes/tkk/icons/fb_1.png" alt="" width="32" height="32" /></a>
+
+<a href="http://soundcloud.com/tanz-klangkombinat/" style="margin-right:5px"><img class="alignnone size-full wp-image-372" title="soundcloud" src="http://tanzundklangkombinat.de/wp-content/themes/tkk/icons/soundcloud.png" alt="" width="32" height="32" /></a>
+
+<a href="https://www.youtube.com/user/tanzundklangkombinat" style="margin-right:5px"><img class="alignnone size-full wp-image-374" title="youtube" src="http://tanzundklangkombinat.de/wp-content/themes/tkk/icons/you_tube.png" alt="" width="32" height="32" /></a>
+
+<a href="http://twitter.com/das_kombinat" style="margin-right:5px"><img class="alignnone size-full wp-image-373" title="Twitter" src="http://tanzundklangkombinat.de/wp-content/themes/tkk/icons/twitter_1.png" alt="" width="32" height="32" /></a>
+
+<a href="http://myspace.com/tanzundklangkombinat" ><img class="alignnone size-full wp-image-371" title="Myspace" src="http://tanzundklangkombinat.de/wp-content/themes/tkk/icons/myspace.png" alt="" width="32" height="32" /></a></div>
+		</div><div id="facebook-fan-box" class="widget widget_ffb"><h3 class="side-title">Werde Fan auf Facebook</h3><iframe src="http://www.facebook.com/plugins/fan.php?id=133532153331171&amp;width=300&amp;connections=10&amp;stream=false&amp;header=false&amp;locale=de_DE" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:300px; height:250px"></iframe></div><div id="gigpress-23" class="widget widget_gigpress"><h3 class="side-title">Nächste Termine</h3>
+<p class="gigpress-empty">Derzeit keine Auftritte.</p><!-- Generated by GigPress 2.2.4 -->
+	</div><div id="get-recent-comments" class="widget widget_get_recent_comments"><h3 class="side-title">Kommentare</h3><div id="get_recent_comments_wrap"><ul>	<li><a href="/?p=11022#comment-2756" title="Platte der Woche #364 &#8211; The End, 17. Dezember 2017">Felix</a>: :´(</li>
+	<li><a href="/?p=10874#comment-2744" title="Platte der Woche #356, 15. Oktober 2017">mister t</a>: .. und das gute Teil ist auch auf Freude am Tanzen erschienen, check out, http://www.freude-am-tanzen...</li>
+	<li><a href="/?p=10864#comment-2738" title="New Mix by Stue!, 13. Oktober 2017">Sybille</a>: I Like it <img src='/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' />  Sehr schönes Set.</li>
+	<li><a href="/?p=10206#comment-2715" title="Platte der Woche #323: Felix Reiter &#8211; Am Offenen Fenster feat. Irisko, 22. Januar 2017">Baba Sikander</a>: =^.^=</li>
+	<li><a href="/?p=9975#comment-2710" title="Platte der Woche #311, 30. Oktober 2016">Magnutze</a>: 1000 Dank für das teilen dieser wunderbaren musik!!!</li>
+</ul></div></div>		<div id="recent-posts-4" class="widget widget_recent_entries">		<h3 class="side-title">Neueste Posts</h3>		<ul>
+					<li>
+				<a href="/2017/12/platte-der-woche-364-the-end/" title="Platte der Woche #364 &#8211; The End">Platte der Woche #364 &#8211; The End</a>
+						</li>
+					<li>
+				<a href="/2017/12/platte-der-woche-363/" title="Platte der Woche #363">Platte der Woche #363</a>
+						</li>
+					<li>
+				<a href="/2017/12/platte-der-woche-362/" title="Platte der Woche #362">Platte der Woche #362</a>
+						</li>
+					<li>
+				<a href="/2017/11/platte-der-woche-361/" title="Platte der Woche #361">Platte der Woche #361</a>
+						</li>
+					<li>
+				<a href="/2017/11/platte-der-woche-360/" title="Platte der Woche #360">Platte der Woche #360</a>
+						</li>
+				</ul>
+		</div>
+    </div>
+
+  </div>
+
+</div>
+
+<br class="clear" />
+<div id="footer">
+<small>&copy; Alle Rechte gesichert - Tanz+Klangkombinat</small>
+<span style="float:right; font-size: 10px;"><a href="/?page_id=90">Impressum</a></span>
+<script type='text/javascript' src='/wp-content/plugins/wpaudio-mp3-player/wpaudio.min.js?ver=3.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/scripts.js?ver=2.4.5'></script>
+</div>
+<!-- 66 Datenbankanfragen. 0,137 Sekunden. -->
+</div>
+</div>
+
+
+
+</body></html>

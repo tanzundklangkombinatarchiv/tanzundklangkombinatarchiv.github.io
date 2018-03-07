@@ -1,0 +1,11 @@
+/*
+Theme Name: TKK
+*/
+/*
+Used to style the TinyMCE editor.
+*/
+html .mceContentBody {
+	max-width:560px;
+}
+
+.clear {clear:both;}
